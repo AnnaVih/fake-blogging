@@ -1,4 +1,4 @@
-# R_SpaceX React Project
+# Guess word game
 
 Guess-word game developed in purpose to learn TDD and React testing in general by using Jest and Enzyme
 
