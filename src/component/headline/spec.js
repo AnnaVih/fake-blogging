@@ -1,5 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import checkPropTypes from 'check-prop-types'
+
 import Headline from './index';
 import {findByTestAttr} from '../../../Utils'
 
@@ -9,6 +11,24 @@ const setUp = (props={}) => {
 }
 
 describe('Headline Component', () => {
+    describe('Checking PropTypes', () => {
+        it('Should not throw a warning', () => {
+            const expectedProps = {
+                header: 'TestHeader',
+                desc: 'TestDesc',
+                tempArr: [{
+                    fName: 'TestName',
+                    lName: 'TestLName',
+                    email: 'emeilTEst'
+                }]
+            };
+            const propsErr = checkPropTypes(Headline.propTypes, expectedProps, 'props', Headline.name );
+
+            expect(propsErr).toBeUndefined();
+        });
+    });
+
+
     describe('Have props', () => {
         let wrapper;
         beforeEach(()=> {
@@ -35,7 +55,7 @@ describe('Headline Component', () => {
             expect(desc.length).toBe(1)
         })
 
-    })
+    });
 
     describe('Have no props', () => {
         let wrapper;
@@ -48,5 +68,5 @@ describe('Headline Component', () => {
             expect(component.length).toBe(0)
         })
 
-    })
+    });
 })
