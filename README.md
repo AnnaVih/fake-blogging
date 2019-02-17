@@ -1,4 +1,4 @@
-# Guess word game
+# Fake blogging page
 
 Simple fake blogs app written in purpose to learn TDD and React testing in general by using Jest and Enzyme
 
