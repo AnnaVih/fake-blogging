@@ -1,6 +1,6 @@
 # Guess word game
 
-Guess-word game developed in purpose to learn TDD and React testing in general by using Jest and Enzyme
+Simple fake blogs app written in purpose to learn TDD and React testing in general by using Jest and Enzyme
 
 ### Version
 1.0.0
@@ -11,17 +11,17 @@ There are two ways for having the app on a local server.
 
 ## Zip archive
 
-You can dowload the latest version directly on [GitHub](https://github.com/AnnaVih/guess-word-game/archive/master.zip).
+You can dowload the latest version directly on [GitHub](https://github.com/AnnaVih/fake-blogging/archive/master.zip).
 
 ## Easy updates with git
 
 If you plan on updating regularly, you can use git :
 ```bash
-git clone https://github.com/AnnaVih/guess-word-game.git
+git clone https://github.com/AnnaVih/fake-blogging.git
 ```
 Then to update :
 ```bash
-cd guess-word-game
+cd fake-blogging
 git pull
 ```
 
